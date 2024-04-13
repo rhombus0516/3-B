@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>練習9</title>
+</head>
+
+<body>
+  <div id="app">
+    JavaScript基礎練習9
+  </div>
+
+  <script>
+    // ①
+    const objArr = [
+      { id: 1, name: '山田太郎', age: 28, gender: '男' },
+      { id: 2, name: '鈴木花子', age: 25, gender: '女' },
+      { id: 3, name: '田中一郎', age: 33, gender: '男' },
+    ]
+    const filterId = objArr.filter((v) => v.id === 2)
+    console.log(filterId)
+
+    const filterGender = objArr.filter((v) => v.gender === '男')
+    console.log(filterGender)
+
+    // ②
+    const findIndexId = objArr.findIndex((v) => v.id === 3)
+    console.log(findIndexId)
+
+    // ③
+    const someResult = objArr.some((v) => v.age > 35)
+    console.log(someResult)
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>練習5</title>
+</head>
+
+<body>
+  <div id="app">
+    JavaScript基礎練習5
+  </div>
+
+  <script>
+    // ①
+    const arrIf = [50, 51, 49, 80, '50', '80']
+    arrIf.map((num, index) => {
+      if (num >= 80) {
+        console.log(`要素番号${index}は80以上です`)
+      } else if (num >= 50) {
+        console.log(`要素番号${index}は80未満50以上です`)
+      } else {
+        console.log(`要素番号${index}は50未満です`)
+      }
+    })
+
+    // ②
+    const arrSwitch = [1, 2, 3, '1', '2']
+    arrSwitch.map((num, index) => {
+      switch (num) {
+        case 1:
+          console.log(`要素番号${index}はケース1です`)
+          break
+        case 2:
+          console.log(`要素番号${index}はケース2です`)
+          break
+        default:
+          console.log(`要素番号${index}はその他です`)
+          break
+      }
+    })
+
+    // ③
+    const arrTernaryOperator = [50, 51, 49]
+    arrTernaryOperator.map((num, index) => {
+      const message = `要素番号${index}は` + (num > 50 ? '50より大きい' : '50以下')
+      console.log(message)
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>練習6</title>
+</head>
+
+<body>
+  <div id="app">
+    JavaScript基礎練習6
+  </div>
+
+  <script>
+    // ①
+    const arr = [50, 51, 49, 75, 90]
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i])
+    }
+
+    // ②
+    for (const e of arr) {
+      console.log(e)
+    }
+
+    // ③
+    arr.map((data, index) => {
+      console.log(index + ': ' + data)
+    })
+
+    // ④
+    const obj = { name: '山田太郎', age: 28, gender: '男' }
+    for (const p in obj) {
+      console.log(p + ':' + obj[p])
+    }
+
+    // ⑤
+    const objArr = [
+      { name: '山田太郎', age: 28, gender: '男' },
+      { name: '鈴木花子', age: 25, gender: '女' },
+      { name: '田中一郎', age: 33, gender: '男' },
+    ]
+  </script>
+</body>
+
+</html>

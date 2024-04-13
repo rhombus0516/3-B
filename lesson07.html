@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>練習7</title>
+</head>
+
+<body>
+  <div id="app">
+    JavaScript基礎練習7
+  </div>
+
+  <script>
+    // ①
+    const num = 99
+    console.log(typeof num)
+    const str = '99'
+    console.log(typeof str)
+    const bool = false
+    console.log(typeof bool)
+    const arr = [1, 2, 3]
+    console.log(typeof arr)
+    const obj = { name: '山田太郎', age: 28 }
+    console.log(typeof obj)
+    const _null = null
+    console.log(typeof _null)
+    const _undefined = undefined
+    console.log(typeof _undefined)
+
+    // ②
+    if (num === 99) {
+      // ここに入る
+      console.log('num === 99')
+    }
+
+    if (str === 99) {
+      // ここには入らない
+      console.log('str === 99')
+    }
+
+    if (str == 99) {
+      // ここに入る
+      console.log('str == 99')
+    }
+  </script>
+</body>
+
+</html>

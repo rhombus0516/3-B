@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>練習11</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <p>JavaScript基礎練習11</p>
+    <button>jQueryのクリックイベント</button>
+  </div><!-- wrapper -->
+
+  <script>
+    $(function () {
+      $("button").on("click", function () {
+        console.log("jQueryのクリックイベント")
+      })
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>練習8</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <p>JavaScript基礎練習8</p>
+    <button onclick="clickFunc()">関数呼び出し</button>
+  </div><!-- wrapper -->
+
+  <script>
+    function clickFunc() {
+      console.log('sampleClick関数を呼び出しました')
+
+      funcA()
+
+      const add = funcB(5, 3)
+      console.log(add)
+
+      arrowFuncA()
+
+      const sub = arrowFuncB(7, 2)
+      console.log(sub)
+    }
+
+    function funcA() {
+      console.log('funcA関数を呼び出しました')
+    }
+
+    function funcB(a, b) {
+      console.log('funcB関数を呼び出しました')
+      return a + b
+    }
+
+    const arrowFuncA = () => console.log('arrowFuncA関数を呼び出しました')
+
+    const arrowFuncB = (a, b) => {
+      console.log('arrowFuncB関数を呼び出しました')
+      return a - b
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>練習3</title>
+</head>
+
+<body>
+  <div id="app">
+    JavaScript基礎練習3
+  </div>
+
+  <script>
+    // ①
+    const arrA = [
+      'りんご',
+      'みかん',
+      'バナナ',
+    ]
+    console.log(...arrA)
+
+    const arrB = ['キュウイ', 'マンゴー']
+    console.log(...arrB)
+
+    // ②
+    arrA[1] = 'いちご'
+    console.log(...arrA)
+
+    // ③
+    const arrC = [...arrA, ...arrB]
+    console.log(...arrC)
+
+    // ④
+  </script>
+</body>
+
+</html>
