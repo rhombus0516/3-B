@@ -12,18 +12,18 @@
   </div>
 
   <script>
-    // ①
+    // ① for文でarrから1ずつ足す
     const arr = [50, 51, 49, 75, 90]
     for (let i = 0; i < arr.length; i++) {
       console.log(arr[i])
     }
 
-    // ②
+    // ② const e of arrは変数eにarrを代入している
     for (const e of arr) {
       console.log(e)
     }
 
-    // ③
+    // ③mapは配列の要素数分ループ 対象配列を基に新しい配列に更新する
     arr.map((data, index) => {
       console.log(index + ': ' + data)
     })
@@ -40,6 +40,13 @@
       { name: '鈴木花子', age: 25, gender: '女' },
       { name: '田中一郎', age: 33, gender: '男' },
     ]
+    
+    const names = objArr.map(function(obj){
+      return obj.name;
+    });
+
+    console.log(names)
+
   </script>
 </body>
 
