@@ -12,7 +12,7 @@
   </div>
 
   <script>
-    // ①
+    // ① ifとelseはセット。複数の場合はelse ifを追加
     const arrIf = [50, 51, 49, 80, '50', '80']
     arrIf.map((num, index) => {
       if (num >= 80) {
@@ -24,7 +24,7 @@
       }
     })
 
-    // ②
+    // ② caseとbrackはセット
     const arrSwitch = [1, 2, 3, '1', '2']
     arrSwitch.map((num, index) => {
       switch (num) {
@@ -40,7 +40,7 @@
       }
     })
 
-    // ③
+    // ③　論理演算子　?で含まれているか否か確認
     const arrTernaryOperator = [50, 51, 49]
     arrTernaryOperator.map((num, index) => {
       const message = `要素番号${index}は` + (num > 50 ? '50より大きい' : '50以下')
