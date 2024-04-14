@@ -13,32 +13,32 @@
 
   <script>
     // ①
-    const num = 99
+    const num = 99 //数字
     console.log(typeof num)
-    const str = '99'
-    console.log(typeof str)
-    const bool = false
+    const str = '99' //文字列
+    console.log(typeof str) 
+    const bool = false //真か偽
     console.log(typeof bool)
-    const arr = [1, 2, 3]
+    const arr = [1, 2, 3] //配列
     console.log(typeof arr)
     const obj = { name: '山田太郎', age: 28 }
     console.log(typeof obj)
-    const _null = null
+    const _null = null //値があるか無いか
     console.log(typeof _null)
-    const _undefined = undefined
+    const _undefined = undefined //値があるか無いか
     console.log(typeof _undefined)
 
-    // ②
+    // ②　数字が完全一致
     if (num === 99) {
       // ここに入る
       console.log('num === 99')
     }
-
+    //数字ではなく文字列のためfalse
     if (str === 99) {
       // ここには入らない
       console.log('str === 99')
     }
-
+    //一致しているためtrue
     if (str == 99) {
       // ここに入る
       console.log('str == 99')
