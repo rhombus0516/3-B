@@ -18,9 +18,14 @@
       { id: 2, name: '鈴木花子', age: 25, gender: '女' },
       { id: 3, name: '田中一郎', age: 33, gender: '男' },
     ]
+
+    //filterIdにobjArrの中にあるものを代入。
+    //fileterを使用し中身を調べれるようにする。vを定義してobjArrのid2が同じ場合表示させている
     const filterId = objArr.filter((v) => v.id === 2)
     console.log(filterId)
 
+    //filterGenderにobjArrの中にあるものを代入。
+    //fileterを使用し中身を調べれるようにする。vを定義して男という文字がある場合表示
     const filterGender = objArr.filter((v) => v.gender === '男')
     console.log(filterGender)
 
