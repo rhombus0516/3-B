@@ -30,10 +30,13 @@
     console.log(filterGender)
 
     // ②
+    //findIndexは0,1,2と数えるため、arreyの中の番号が3の場合は2と表示される
     const findIndexId = objArr.findIndex((v) => v.id === 3)
     console.log(findIndexId)
 
     // ③
+    //objArrの中に35以上になるものがあるか
+    //一つでも条件があればtrueを返すが、無い為falseを返している
     const someResult = objArr.some((v) => v.age > 35)
     console.log(someResult)
   </script>
